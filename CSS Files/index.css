@@ -1,0 +1,327 @@
+/*============Imports==========*/
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("/node_modules/animate.css/animate.css");
+/*============Imports==========*/
+* {
+  margin: 0%;
+  border: 0;
+}
+.nav-box {
+  height: 90vh;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image: url("/Site-Photo/bg-main.jpg");
+  background-repeat: no-repeat;
+
+  border-bottom-right-radius: 95px;
+}
+.logo-text {
+  padding-top: 1em;
+  text-align: center;
+  color: white;
+
+  font-family: "Courgette", cursive;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav-bar {
+  text-align: center;
+  padding-bottom: 1em;
+}
+.nav-bar a {
+  margin: 0.3em;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.nav-bar a:hover:not(.nav-active) {
+  color: orangered;
+}
+.nav-active {
+  background-color: orangered;
+  border-radius: 45px;
+  padding: 0.2em;
+  box-shadow: 5px 5px black;
+}
+.fg-content img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  border-radius: 200px;
+}
+.fg-content .fg-text {
+  color: white;
+  text-align: center;
+  width: 55%;
+  margin: 0.3em auto;
+  padding: 10px;
+  border: 2px white solid;
+  border-bottom-left-radius: 55px;
+  border-top-right-radius: 55px;
+}
+.middle-section-1 h2 {
+  margin: 1em;
+  margin-top: 2em;
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.middle-section-1 img {
+  display: block;
+  width: 35vw;
+  padding: 1em;
+  margin: 1em auto;
+  background-color: rgb(243, 243, 243);
+  border-radius: 45px;
+  box-shadow: 0 20px 10px rgba(71, 68, 68, 0.3);
+}
+.middle-section-1 img:hover {
+  animation: pulse;
+  animation-duration: 1s;
+}
+.middle-section-2 {
+  background-color: rgb(243, 243, 243);
+  padding-bottom: 25px;
+}
+.middle-section-2 h2 {
+  text-align: center;
+  margin: 1em;
+  padding: 0.5em;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.project-1 .crazyme24 {
+  color: rgb(153, 6, 141);
+  text-align: left;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.3em;
+}
+.project-2 .drcktripathi {
+  color: rgb(13, 196, 241);
+  text-align: left;
+  text-decoration: none;
+  margin-top: 2em;
+  padding: 0.3em;
+}
+
+.middle-section-2 img {
+  display: block;
+  width: 85vw;
+  margin: 1em auto;
+  border-radius: 25px;
+
+  box-shadow: 0 20px 10px rgba(71, 68, 68, 0.3);
+}
+.middle-section-2 p {
+  padding: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  width: 35vw;
+  margin: 0 auto;
+  margin-top: 0em;
+}
+.social-icons img {
+  width: 10vw;
+  margin: 0.3em;
+}
+.fb-icon:hover {
+  padding: 4px;
+  background-color: rgb(21, 98, 197);
+}
+.twitter-icon:hover {
+  padding: 4px;
+  background-color: rgb(10, 174, 250);
+}
+.insta-icon:hover {
+  padding: 4px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.middle-section-2 button {
+  display: block;
+  margin: 1em auto;
+  width: 150px;
+  border-radius: 25px;
+  border: 3px white solid;
+  box-shadow: rgb(109, 105, 105) 5px 5px;
+  font-weight: bold;
+  background-color: rgb(143, 16, 143);
+}
+.middle-section-2 button:hover {
+  border: white 2px solid;
+  animation: pulse;
+  animation-duration: 0.5s;
+}
+@media screen and (min-width: 920px) {
+  .menu {
+    display: flex;
+  }
+  .logo-text {
+    padding: 1em;
+  }
+  .nav-bar {
+    margin-left: auto;
+    padding: 2em;
+  }
+  .fg-content {
+    display: flex;
+  }
+
+  .fg-content img {
+    order: 2;
+    display: block;
+    width: 28%;
+    height: 28%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-left: auto;
+  }
+  .fg-content .fg-text {
+    font-size: 6vw;
+    width: 44%;
+    padding: 10px;
+    margin: 0em 0em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+  }
+  .middle-section-1 .languages {
+    display: flex;
+    flex-direction: row;
+  }
+  .middle-section-1 .languages img {
+    width: 15vw;
+  }
+  .social-icons {
+    width: 15%;
+  }
+  .social-icons img {
+    width: 70%;
+  }
+}
+.services-section {
+  padding: 2em;
+}
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+.col {
+  padding: 2px;
+  width: 70vw;
+  margin: 1em auto;
+  border-radius: 45px;
+  border: 1px rgb(143, 16, 143) solid;
+  box-shadow: 0 20px 10px rgba(71, 68, 68, 0.3);
+}
+.col:hover {
+  animation: pulse;
+  animation-duration: 1s;
+}
+.col img {
+  display: block;
+  width: 35%;
+  margin: 1em auto;
+}
+.col h3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.col p {
+  font-weight: 500;
+  text-align: center;
+}
+.col button {
+  width: 40%;
+  display: block;
+  margin: 1em auto;
+  background-color: rgb(143, 16, 143);
+  font-weight: bold;
+  border: 2px white solid;
+  border-radius: 45px;
+  padding: 0.5em;
+  box-shadow: 0 20px 10px rgba(71, 68, 68, 0.3);
+}
+.col button:hover {
+  animation: rubberBand;
+  animation-duration: 1s;
+}
+.footer {
+  width: 100%;
+  background-color: rgb(143, 16, 143);
+}
+.footer h2 {
+  text-align: center;
+  color: white;
+  border-bottom: 2px white solid;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer a {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+.footer img {
+  width: 75%;
+}
+.footer img:hover {
+  border-radius: 45px;
+  border: 1px white solid;
+}
+.footer .social-icons {
+  width: 25%;
+}
+.copyright {
+  background-color: rgb(29, 26, 26);
+}
+.copyright p {
+  color: white;
+  padding: 0.3em;
+}
+@media screen and (min-width: 820px) {
+  .columns {
+    flex-direction: row;
+  }
+  .col {
+    width: 4vw;
+    margin: auto 1em;
+  }
+  .col button {
+    width: 50%;
+  }
+  .footer img {
+    width: 75%;
+  }
+  .footer .social-icons {
+    width: 12%;
+  }
+}
